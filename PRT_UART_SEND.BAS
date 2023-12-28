@@ -1,5 +1,5 @@
-   10 REM SERIAL SEND EXAMPLE
-   20 REM RICHARD TURNNIDGE 2023
+   10 REM SERIAL SEND EXAMPLE FOR A (TTL SERIAL) MINI THERMAL RECEIPT PRINTER
+   20 REM RICHARD TURNNIDGE 2023 - ADAPTED FOR A SERIAL PRINTER BY TIM GILMORE
    21 REM This version is for 16-bit basic but you could adapt
    22 REM Check if we are running in 24-bit BASIC
    24 :
@@ -85,11 +85,11 @@
  5580   ?A = ASC(MID$(S$,S,1))
  5590   CALL senduart% : REM send the data byte
  5600 NEXT
- 5610 FOR LF = 1 TO 5
- 5620   ?A = 10
- 5630   CALL senduart% : REM Line Feed the message upward to see it
- 5640 NEXT
- 5650 ?A = 13
- 5660 CALL senduart% : REM Carriage Return
+ 5610 ?A = 13
+ 5620 CALL senduart% : REM Carriage Return
+ 5630 FOR LF = 1 TO 5
+ 5640   ?A = 10
+ 5650   CALL senduart% : REM Line Feed the message upward to see it
+ 5660 NEXT
  5670 GOTO 5100
  5999 CALL closeuart%
