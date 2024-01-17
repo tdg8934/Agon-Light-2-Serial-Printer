@@ -5,7 +5,9 @@ Many thanks to Richard Turnnidge for his Agon UART send Assembly Basic code. Fro
 Using Richard’s code, I was able to get it working within a few hours. Richard’s code is set up for 9600 baud through 3 long bytes in little endian format. Those bytes were changed to &00 &4B &00 for 19200 baud. The older printers were 9600 baud but I received a newer one at 19200 baud. 
 Other than that it was just writing simple example code to print a self test page as well as send a message you input to the serial printer. 
 In the printer manual, arduino/ pi drivers there are a ton of settings that can be made. You can also print high resolution graphics and bar codes and more.
-In a futuer revision I would like to be able to do something like create a Agon program listing ( ie LPRINT).
+
+Richard has created a program listing MOSlet for the printer you can see on his GitHub site: https://github.com/richardturnnidge/LLIST
+There are 2 parameter settings depending if the user has a 9600 baud (default) or 19200 baud Mini Thermal Receipt Printer. Read the documentation. 
 
 Mini Thermal Receipt Printer (starter pack):
 https://www.electromaker.io/shop/product/mini-thermal-receipt-printer-starter-pack?gad_source=1&gclid=CjwKCAiAs6-sBhBmEiwA1Nl8s7WgNRFRTTuOfL7HAStYqrdWFSnN6erERbzFKS4c0n1K96QgKvtWvBoCSMcQAvD_BwE&fbclid=IwAR1idm1_4siQWm0Y45-V9CAQrlBODqR9aeuo2CbUDOYcwm7sUF5E42Qa6lA
