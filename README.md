@@ -1,4 +1,4 @@
-# Agon-Light-2-Serial-Printer
+# Agon-Light-2-UART-Serial-Printer
 Mini Thermal Receipt Printer (Serial RxD) to Agon Light / Agon Light 2 computer using Agon UART send code by Richard Turnnidge 
 
 Many thanks to Richard Turnnidge for his Agon UART send Assembly Basic code. From this I was able communicate with a 3.3v - 5v tolerant Mini Thermal Receipt Printer (serial Rx / Tx) that used to be sold by Adafruit but was discontinued along with its starter pack (printer, thermal paper, power supply, connector/ wires) . However I found a company Electromaker that still carries it and it is pretty quick in delivering via UPS for about $80 total. 
